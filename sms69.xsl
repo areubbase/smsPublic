@@ -104,7 +104,7 @@
         </xsl:variable>
         
         <!-- Replace <3 with ❤️ and "10;" with newline -->
-        <xsl:variable name="final-text" select="translate($converted-text, '<3', '&#x2764;')"/>
+        <xsl:variable name="final-text" select="translate($converted-text, '&lt;3', '&#x2764;')"/>
         <xsl:variable name="final-text" select="translate($converted-text, '10;', '&#xA;')"/>
 
         <xsl:value-of select="$final-text"/>
